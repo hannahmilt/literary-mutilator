@@ -34,6 +34,31 @@ let object = document.getElementById("object");
 console.log(object.style.fontFamily);
 object.style.fontFamily = "monospace";
 
+//tired to figure out highlighting a word
+/*function getElementByName(){
+	elementByName = document.getElementsByName("kitty");
+}
+function highlight()
+{
+	for (var i=0; i<elementByName.length; i++)
+	{
+		elementByName[i].style.color = "green"
+	}
+}*/
+
+function doSearch(text, backgroundColor) {
+	if (window.find && window.getSelection) {
+		document.designMode = "on";
+		var sel =window.getSelection();
+		sel.collapse(document.body,0);
+		while (window.find(text)) {
+			document.execCommand("HiliteColor", false, backgroundColor);
+			sel.collapseToEnd();
+		}
+		document.designMode = "off";
+	}
+}
+
 
 //FIGURING OUT FETCH NEED TO WORK ON
 /*fetch('https://jsonplaceholder.typicode.com/todos/1')
