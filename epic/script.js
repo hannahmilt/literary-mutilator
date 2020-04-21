@@ -13,7 +13,19 @@
 		inputText.innerHTML = innerHTML;
 	}
 }*/
-
+//CHANGES TOP PARAGRAPH TEXT COLOR
 let para = document.getElementById('para');
 console.log(para.style.color);
-one.style.color = "magenta";
+para.style.color = "magenta";
+
+//KEY EVENT. WHEN V IS PRESSED BACKGROUND CHANGES YELLOW
+window.addEventListener("keydown", event => {
+	if (event.key == "v") {
+		document.body.style.background = "yellow";
+	}
+});
+window.addEventListener("keyup", event => {
+	if (event.key == "v"){
+		document.body.style.background = "";
+	}
+});
