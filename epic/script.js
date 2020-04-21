@@ -26,6 +26,17 @@ window.addEventListener("keydown", event => {
 });
 window.addEventListener("keyup", event => {
 	if (event.key == "v"){
-		document.body.style.background = "";
+		document.body.style.background = ""
 	}
 });
+// changed the font of second paragraph to Helvetica
+let object = document.getElementById("object");
+console.log(object.style.fontFamily);
+object.style.fontFamily = "monospace";
+
+
+//FIGURING OUT FETCH NEED TO WORK ON
+/*fetch('https://jsonplaceholder.typicode.com/todos/1')
+	.then(response => response.json("cat"))
+	.then(json => console.log(json));*/
+
