@@ -14,9 +14,52 @@
 	}
 }*/
 //CHANGES TOP PARAGRAPH TEXT COLOR
-let para = document.getElementById('para');
-console.log(para.style.color);
-para.style.color = "magenta";
+
+/*button.addEventListener('click', function () {
+	var demo = document.getElementById("demo");
+
+	if(state === 1) {
+		demo.style.color = 'red';
+		state = 0;
+	} else {
+		demo.style.color = 'green';
+		state = 1;
+	}
+}*/
+
+
+/*const element = document.querySelector("para");
+
+element.addEventListener("mouseover", function(){
+	let para = document.getElementById('para');
+
+	if(state ===1){
+		para.style.color = "black";
+		state =0;
+	} else {
+		para.style.color = "magenta";
+		state = 1;
+	}
+});*/
+
+/*const element = document.querySelector("para");
+element.addEventListener("mouseover", event => {
+	console.log("Mouse in");
+})*/
+
+//Changing Text Color (working version)
+function highlight() {
+	document.getElementById("text-color") .style.textColor = "magenta";
+}
+
+//TEXT COLOR RESET
+function resetTextColor() {
+	document.getElementById("text-color") .style.textColor = " ";
+}
+
+
+/*console.log(para.style.color);
+para.style.color = "magenta";*/
 
 //KEY EVENT. WHEN V IS PRESSED BACKGROUND CHANGES YELLOW
 window.addEventListener("keydown", event => {
@@ -46,7 +89,7 @@ function highlight()
 	}
 }*/
 
-function doSearch(text, backgroundColor) {
+/*function doSearch(text, backgroundColor) {
 	if (window.find && window.getSelection) {
 		document.designMode = "on";
 		var sel =window.getSelection();
@@ -57,7 +100,7 @@ function doSearch(text, backgroundColor) {
 		}
 		document.designMode = "off";
 	}
-}
+}\*/
 
 
 //FIGURING OUT FETCH NEED TO WORK ON
